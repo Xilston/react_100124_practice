@@ -298,7 +298,7 @@ describe('', () => {
   });
 
   // Categories tests are skiped by default
-  describe.skip('Filter by categories', () => {
+  describe('Filter by categories', () => {
     it('should have All Categories Button active by default', () => {
       categoriesFilter.allButton().should('not.have.class', 'is-outlined');
     });

@@ -327,7 +327,7 @@ const User = (props) => {
 
   return (
     <a
-      data-cy="FilterUser"
+      data-cy={user.id < 1 ? 'FilterAllUsers' : 'FilterUser'}
       href="#/"
       onClick={() => onSelect(user)}
       className={classNames({ 'is-active': user.id === selectedUser.id })}
